@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Add value to .env file
         id: time
-        run: touch .env
+        run: |
+          touch .env
+          echo "YOUR_KEY=${{ secrets.SECRET }}" >> .env
         
     
