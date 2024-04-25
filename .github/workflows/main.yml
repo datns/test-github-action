@@ -9,6 +9,8 @@ jobs:
     steps:
       - uses: action/checkout@v3
       - name: Add value to .env file
-          run: echo "YOUR_KEY=YOUR_VALUE" >> .env 
+          run: |
+            touch .env
+            echo "YOUR_KEY=YOUR_VALUE" >> .env 
         
     
