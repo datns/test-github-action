@@ -15,3 +15,5 @@ jobs:
           echo "YOUR_KEY=${{ secrets.SECRET }}" >> .env
         
     
+      - name: Log content of file
+        run: .env
