@@ -16,4 +16,4 @@ jobs:
         
     
       - name: Log content of file
-        run: .env
+        run: cat .env
